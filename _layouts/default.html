@@ -8,6 +8,9 @@
   {% unless site.arama_motorlari %}<meta name="robots" content="noindex, nofollow">{% endunless %}
   <link rel="stylesheet" href="{{ '/assets/stil.css' | relative_url }}">
   {% feed_meta %}
+  {% if site.adsense_id and site.adsense_id != "" %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense_id }}" crossorigin="anonymous"></script>
+  {% endif %}
   <script>
     (function () {
       var t = localStorage.getItem("tema");
@@ -27,6 +30,7 @@
 
   <footer class="alt">
     <p>{{ site.footer_notu }}</p>
+    <p class="alt-baglanti"><a href="{{ '/gizlilik/' | relative_url }}">Gizlilik politikası</a></p>
   </footer>
 
   <script>

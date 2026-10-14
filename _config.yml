@@ -9,6 +9,13 @@ footer_notu: "Bu sayfaların bir sahibi var, ama adı yok."
 # Arama motorları (Google vb.) siteyi listelesin mi? (true / false)
 arama_motorlari: true
 
+# Google AdSense yayıncı kimliği (AdSense onayından sonra doldur).
+# Örnek: "ca-pub-1234567890123456"  — boş kaldıkça reklam gösterilmez.
+adsense_id: ""
+
+# Gizlilik politikasında görünecek iletişim adresi (anonim bir e-posta önerilir).
+iletisim_eposta: ""
+
 lang: tr
 timezone: Europe/Istanbul
 author: Anonim

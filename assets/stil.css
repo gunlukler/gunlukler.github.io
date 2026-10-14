@@ -63,6 +63,9 @@ a { color: inherit; }
   margin-top: 80px; padding-bottom: 40px;
   color: var(--soluk); font-style: italic; font-size: 15px; text-align: center;
 }
+.alt-baglanti { font: 12px system-ui, sans-serif; font-style: normal; }
+.alt-baglanti a { color: var(--soluk); }
+.alt-baglanti a:hover { color: var(--vurgu); }
 
 /* ---------- ana sayfa ---------- */
 .giris { padding: 48px 0 20px; }
@@ -156,6 +159,7 @@ a.hucre:hover { opacity: 1; outline: 2px solid var(--murekkep); outline-offset: 
 .icerik > p:first-child::first-letter {
   float: left; font-size: 3.4em; line-height: .9; padding: 6px 8px 0 0; color: var(--vurgu);
 }
+.icerik.sade > p:first-child::first-letter { float: none; font-size: inherit; padding: 0; color: inherit; }
 .icerik blockquote {
   margin: 1.5em 0; padding-left: 18px; border-left: 3px solid var(--vurgu);
   color: var(--soluk); font-style: italic;

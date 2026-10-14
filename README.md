@@ -38,6 +38,12 @@ powershell -ExecutionPolicy Bypass -File .\yayinla.ps1                 # GitHub'
 
 `_config.yml` dosyasında site adı, açıklama, alt yazı ve arama motoru görünürlüğü (`arama_motorlari`) değiştirilebilir.
 
+## Reklam (Google AdSense)
+
+1. AdSense onayı için kendi alan adın gerekir (ör. `ornek.com`); `github.io` adresleri genelde kabul edilmez.
+2. Onaydan sonra `_config.yml` içindeki `adsense_id` alanına `ca-pub-...` kimliğini yaz → reklam kodu ve `ads.txt` otomatik oluşur.
+3. Gizlilik politikası sayfası hazır: `/gizlilik/`.
+
 ## Anonimlik notları
 
 - Site adresi GitHub kullanıcı adını içerir (`kullaniciadi.github.io`) — gerçek adınla ilişkisi olmayan bir hesap kullan.
