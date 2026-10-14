@@ -22,7 +22,7 @@ author: Anonim
 
 # Depo adı "kullaniciadi.github.io" ise baseurl boş kalır.
 # Başka bir ad verdiysen (ör. "gunluk") buraya "/gunluk" yaz.
-url: ""
+url: "https://gunlukler.github.io"
 baseurl: ""
 
 permalink: /:year/:month/:day/:title/
