@@ -1,0 +1,14 @@
+---
+layout: null
+---
+[{% for p in site.posts %}
+  {
+    "baslik": {{ p.title | jsonify }},
+    "tarih": {{ p.date | date: "%Y-%m-%d" | jsonify }},
+    "url": {{ p.url | relative_url | jsonify }},
+    "ruh": {{ p.ruh_hali | jsonify }},
+    "ozet": {{ p.excerpt | strip_html | normalize_whitespace | truncate: 220 | jsonify }},
+    "metin": {{ p.content | strip_html | normalize_whitespace | jsonify }},
+    "kelime": {{ p.content | strip_html | number_of_words }}
+  }{% unless forloop.last %},{% endunless %}{% endfor %}
+]

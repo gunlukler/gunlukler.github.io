@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.layout == "post" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+  {% unless site.arama_motorlari %}<meta name="robots" content="noindex, nofollow">{% endunless %}
+  <link rel="stylesheet" href="{{ '/assets/stil.css' | relative_url }}">
+  {% feed_meta %}
+  <script>
+    (function () {
+      var t = localStorage.getItem("tema");
+      if (t) document.documentElement.setAttribute("data-tema", t);
+    })();
+  </script>
+</head>
+<body>
+  <header class="ust">
+    <a class="logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <button class="tema-dugme" type="button" aria-label="Açık / koyu tema">◐</button>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="alt">
+    <p>{{ site.footer_notu }}</p>
+  </footer>
+
+  <script>
+    document.querySelector(".tema-dugme").addEventListener("click", function () {
+      var kok = document.documentElement;
+      var koyuMu = kok.getAttribute("data-tema") === "koyu" ||
+        (!kok.getAttribute("data-tema") && matchMedia("(prefers-color-scheme: dark)").matches);
+      var yeni = koyuMu ? "acik" : "koyu";
+      kok.setAttribute("data-tema", yeni);
+      localStorage.setItem("tema", yeni);
+    });
+  </script>
+</body>
+</html>

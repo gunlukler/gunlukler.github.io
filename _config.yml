@@ -1,0 +1,28 @@
+# ---------------------------------------------------------------
+#  Site ayarları — değiştirdikten sonra kaydet ve yayınla.
+# ---------------------------------------------------------------
+
+title: "Sessiz Sayfalar"
+description: "İsmi olmayan birinin gün gün tuttuğu notlar."
+footer_notu: "Bu sayfaların bir sahibi var, ama adı yok."
+
+# Arama motorları (Google vb.) siteyi listelesin mi? (true / false)
+arama_motorlari: true
+
+lang: tr
+timezone: Europe/Istanbul
+author: Anonim
+
+# Depo adı "kullaniciadi.github.io" ise baseurl boş kalır.
+# Başka bir ad verdiysen (ör. "gunluk") buraya "/gunluk" yaz.
+url: ""
+baseurl: ""
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - "*.ps1"
