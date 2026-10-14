@@ -1,4 +1,4 @@
-# Sessiz Sayfalar
+# Y'nin Günlüğü
 
 Anonim, sade bir günlük sitesi. GitHub Pages (Jekyll) ile ücretsiz yayınlanır.
 
