@@ -21,12 +21,13 @@ Anonim, sade bir günlük sitesi. GitHub Pages (Jekyll) ile ücretsiz yayınlan�
    ```
 4. **Commit changes** → 1-2 dakika sonra sitede görünür.
 
-**Yol 2: Bilgisayardan**
+**Yol 2: Bilgisayardan — masaüstündeki "Yeni Günlük" simgesi**
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\yeni.ps1 "Yağmurlu sabah"   # dosyayı oluşturur, Not Defteri'nde açar
-powershell -ExecutionPolicy Bypass -File .\yayinla.ps1                 # GitHub'a gönderir
-```
+1. Simgeye çift tıkla → başlığı ve (istersen) ruh hâli emojisini yaz.
+2. Not Defteri açılır → "Bugün..." yerine günlüğünü yaz → **Ctrl + S** ile kaydet.
+3. Küçük pencerede **Tamam**'a bas → yazı siteye gönderilir.
+
+Simge `yeni-gunluk.ps1` betiğini çalıştırır. Simge silinirse Claude'dan yeniden oluşturmasını isteyebilirsin.
 
 ## Yazım ipuçları (Markdown)
 
